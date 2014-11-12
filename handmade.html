@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="icon" href="../../favicon.ico">
+
+        <title></title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="cover.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- Google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+        <script language="JavaScript" type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+        </script>
+
+        <!-- SCRIPT FOR BUTTON -->
+        <script language="JavaScript" type="text/javascript">
+        $(function() {
+         $.fn.scrollToTop = function() {
+          $(this).hide().removeAttr("href");
+          if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+          var scrollDiv = $(this);
+          $(window).scroll(function() {
+           if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+           else $(scrollDiv).fadeIn("slow")
+          });
+          $(this).click(function() {
+           $("html, body").animate({scrollTop: 0}, "slow")
+          })
+         }
+        });
+         
+        $(function() {
+         $("#Go_Top").scrollToTop();
+        });
+        </script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <!-- .site-wrapper /обгортка сайту/-->
+        <div class="site-wrapper">
+        
+        <!-- .site-wrapper-inner /внутрішня обгортка сайту/-->
+            <div class="site-wrapper-inner">
+            
+            <!-- .cover-container /обложка-контейнер/-->
+                <div class="cover-container">
+                
+                <!-- HEADER -->
+                    <!-- .masthead clearfix /верхній  очищення/ -->
+                        <div class="masthead clearfix">
+                        
+                        <!-- .inner /внутрішній/ -->
+                            <div class="inner">
+
+                            <!--.masthead-brand /верхній(топ)-бренд/-->
+                            <a class="masthead-brand" href="handmade.html"><img src="img/logo.png" width="260px" height="110px"></a>
+                            <!--End .masthead-brand -->
+
+                            <!-- NAVIGATION -->
+                                <!-- .nav  masthead-nav-->
+                                    <ul class="nav masthead-nav font">
+                                        <li class="active"><a href="handmade.html">Главная</a></li>
+                                        <li><a href="shop.html">Магазин</a></li>
+                                        <li><a href="usefulness.html">Полезности</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                                <!-- End .nav masthead-nav -->
+                            <!-- END NAVIGATION-->
+                            
+                            </div>
+                        <!-- End .inner-->
+
+                        </div>
+                    <!-- End .masthead clearfix -->
+                <!-- END HEADER -->
+                
+                <!-- CONTENT -->
+
+                    <!-- CARUSEL -->
+                        <div id="carousel-example-generic" class="carousel slide hidden-xs hidden-sm" data-ride="carousel">
+                        <!-- Indicators -->
+                         <ol class="carousel-indicators">
+                           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div  class="carousel-inner font" >
+                            <div class="item active">
+                                <img src="img/carusel_1.jpg" alt="handmade">
+                                <div class="carousel-caption">
+                                <span id="carousel_text"><b>Ручная работа.</b> Броско. Ярко. Эффектно.</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/carusel_2.jpg" alt="handmade">
+                                <div class="carousel-caption">
+                                <span id="carousel_text"><b>Ручная работа</b> твой стиль жизни.</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/carusel_3.jpg" alt="handmade">
+                                <div class="carousel-caption">
+                                <span id="carousel_text">Только настоящее. <b>Ручная работа.</b></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        </div>
+                    <!-- END CARUSEL -->
+
+                    <!-- WELL -->
+                        <div class="well">
+                        
+                        <!--Jumbotron -->
+                            <div class="jumbotron">
+                                  <p>Мы рады приветствовать всех единомышленников в этом уголке интернета, посвященном шитью, вязанию и всяческому рукоделию. <b>Ручная работа</b> - это сайт-магазин самых разнообразных вещей ручной работы. Все милые вещички сделаны с большой любовью и трепетом. Пускай они Вам приносят радость!</p>
+                              </div>
+                        <!-- End Jumbotron -->
+                    
+                        <!--Latest handmade  -->
+                            <div  class="font" id="separator_marging">
+                                <span id="separator">Последние поделки
+                                    <hr class="hidden-xs hidden-sm">
+                                </span>
+                            </div>
+                              
+                            <div class="row">
+            
+                                <div class="col-xs-12 col-sm-6 col-md-4" id="col_height">
+                                    <div href="#" class="thumbnail">
+                                        <img src="img/owl.jpg" alt="owl">
+                                        <div class="caption">
+                                            <h4>Милашка сова</h4>
+                                            <p> Сова из фетра с глазами пуговками. Размер: 30х20</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary" role="button"> Подробние</a>
+                                                <a href="#" class="btn btn-danger" role="button"> <span class="glyphicon glyphicon-shopping-cart"></span> Купить</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-4" id="col_height">
+                                    <div href="#" class="thumbnail">
+                                        <img src="img/owl.jpg" alt="owl">
+                                        <div class="caption">
+                                            <h4>Милашка сова</h4>
+                                            <p> Сова из фетра с глазами пуговками. Размер: 30х20</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary" role="button"> Подробние</a>
+                                                <a href="#" class="btn btn-danger" role="button"> <span class="glyphicon glyphicon-shopping-cart"></span> Купить</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4" id="col_height">
+                                    <div href="#" class="thumbnail">
+                                        <img src="img/bag.jpg" alt="owl">
+                                        <div class="caption">
+                                            <h4>Сумка</h4>
+                                            <p>Сумочка из ткани. Размеры 50х30. Длина ручки 50см.</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary" role="button"> Подробние</a>
+                                                <a href="#" class="btn btn-danger" role="button"> <span class="glyphicon glyphicon-shopping-cart"></span> Купить</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4" id="col_height">
+                                    <div href="#" class="thumbnail">
+                                        <img src="img/bracelet_1.jpg" alt="owl">
+                                        <div class="caption">
+                                            <h4>Браслет</h4>
+                                            <p>Веселый браслет из булавок и бисера.</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary" role="button"> Подробние</a>
+                                                <a href="#" class="btn btn-danger" role="button"> <span class="glyphicon glyphicon-shopping-cart"></span> Купить</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4" id="col_height">
+                                    <div href="#" class="thumbnail">
+                                        <img src="img/spider.jpg" alt="owl">
+                                        <div class="caption">
+                                            <h4>Паучок</h4>
+                                            <p>Паучок держит пуговку.</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary" role="button"> Подробние</a>
+                                                <a href="#" class="btn btn-danger" role="button"> <span class="glyphicon glyphicon-shopping-cart"></span> Купить</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4" id="col_height">
+                                    <div href="#" class="thumbnail">
+                                        <img src="img/owl.jpg" alt="owl">
+                                        <div class="caption">
+                                           <p>Паучок держит пуговку.</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary" role="button"> Подробние</a>
+                                                <a href="#" class="btn btn-danger" role="button"> <span class="glyphicon glyphicon-shopping-cart"></span> Купить</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
+                        <!--End Latest handmade  -->
+                        
+                        <!-- Latest usefulness -->
+                            <div  class="font" id="separator_marging">
+                                <span id="separator">Последние полезности
+                                    <hr class="hidden-xs hidden-sm">
+                                </span>  
+                            </div>
+                            
+
+                            <!-- Panel group -->
+                                <div class="panel-group" >
+                                
+                                    <!--1-st Panel  -->
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span>
+                                                    Тильда кукла-ангел
+                                                    </span>
+                                                </h4>
+                                            </div>
+
+                                            <div>
+                                                <div class="panel-body">
+                                                    <p>В данном мастер-классе по рукоделию описывается изготовление куклы из ткани. Вы можете сделать своими руками вот такое прекрасное, сверкающее и волшебное голубоглазое сокровище в простом белом платьице, с крылышками из перьев и в великолепных башмачках. С волшебной палочкой в руках, эта тряпичная кукла просто завораживает. Для того, чтобы изготовить куклу-ангелочка, вам нужно будет потратить достаточно времени. Зато она станет отличным подарком для детишек.</p>
+                                                    <img src="img/dol.jpg" height="200px" width="150" alt="dol" class="img_left">
+
+                                                    <p>Перед тем, как сшить мягкую игрушку, приготовьте все необходимое.</p> 
+                                                    <p>Необходимые материалы: 
+                                                    <ul>
+                                                        <li>льняная или стопроцентная хлопковая ткань – 1 кв. м </li>
+                                                        <li>белые, голубые (или коричневые) и розовые обрезки фетра для глазок и ротика</li>
+                                                        <li>черные и розовые нитки для вышивания для оформления черт лица</li>
+                                                        <li>толстые бежевые нитки для изготовления волос</li>
+                                                        <li>сверкающие бусинки для тиары</li>
+                                                        <li>ткань для набивки</li>
+                                                        <li>иглы для вшивания (№5 или 6); </li>
+                                                    </ul>
+                                                    <p>Платье и крылья</p>
+                                                    <ul>
+                                                       <li>белая хлопковая ткань</li>
+                                                       <li>50 кв.см. для платья и две полоски (каждая 20х2,5 см) для рукавов</li>
+                                                       <li>пушистое украшение – 50 см. для крыльев</li>
+                                                       <li>резинка 0,6х50 см для вставки в платье в области шеи и рукавов</li>
+                                                       <li>блестки и бусинки Башмачки</li>
+                                                       <li>бежевый фетр 12 кв.см. для подошв и 23 кв.см. для верха</li>
+                                                       <li>блестки</li>
+                                                       <li>блестящая ленточка – 25 см для завязок  
+                                                    </ul>
+                                                    <p>Волшебная палочка</p>
+                                                    <ul>
+                                                        <li>золотистый фетр – 10 кв.см., плюс кусочек для звездочки</li>
+                                                        <li>блестки</li>
+                                                    </ul>
+                                                    <p>Выкройки для тряпичной куклы можно скачать здесь.
+                                                    <p> Шьем куклу: делаете все таким же образом, как и при изготовлении шаблона для куклы. Затем пришиваете сверкающие бусинки по линии роста волос для тиары.Сшейте башмачки и украсьте блестками и лентой, как видите на фотографии. Вырежьте детали платья по выкройке. Оно должно получиться длиной почти до пяток. Сложите лицевыми сторонами вместе детали платья и сшейте между собой, оставив два отверстия по бокам для рукавов. Выверните на лицевую сторону и прижмите швы на отверстиях для рукавов внутрь, чтобы скрыть неровные края. Сделайте объемные рукава, согнув каждую полоску ткани вдоль пополам лицевыми сторонами внутрь. Прострочите вдоль длинного края. Выверните на лицевую сторону. Вставьте резинку длиной 15 см внутрь трубки из ткани и завяжите или сшейте между собой концы резинки, чтобы сделать объемный рукав. Сшейте короткие края вместе. Вставьте рукав в отверстие для рукава и пришейте. Таким же образом сшейте, а затем пришейте на место и другой рукав.Декорируйте платье бусинками и блестками.Закрутите пушистое украшение дважды в фигурку в виде восьмерки, сделав одни кольца чуть меньше, чем другие два. Место скрутки прошейте, чтобы закрепить. К платью пришейте в области лопаток.</p>
+                                                    <p>Волшебная палочка: сверните в рулон квадратик из фетра и прошейте его вдоль соединения. Вырежьте из другого кусочка фетра звездочку и пришейте к верхушке палочки. Украсьте блестками. Пришейте к руке.</p>
+                                                    <p>Кукла готова!</p>
+                                                    <p>Скачать выкройки платья и башмачков для тряпичной куклы: выкройки (формат PDF)</p>
+
+                                                    <p><a href="#" class="btn btn-primary" role="button">Подробние</a></p>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- End 1-st Panel -->                         
+
+                                    <!--2-nd Panel  -->
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span>
+                                                    Стихи
+                                                    </span>
+                                                </h4>
+                                            </div>
+
+                                            <div>
+                                                <div class="panel-body">
+                                                    <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+                                                    <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</p>
+                                                    <p>Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.</p>
+                                                    <p>Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.</p>
+                                                    <p>Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув</p>
+                                                    <img src="img/dol.jpg" height="200px" width="150" alt="dol" class="img_right">
+                                                    <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+                                                    <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</p>
+                                                    <p>Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.</p>
+                                                    <p>Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.</p>
+                                                    <p>Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув</p>
+
+                                                    <p><a href="#" class="btn btn-primary" role="button">Подробние</a></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- End 2-nd Panel -->
+                                    
+                                    <!--3-d Panel  -->
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span>
+                                                    Collapsible Group Item 
+                                                    </span>
+                                                </h4>
+                                            </div>
+
+                                            <div>
+                                                <div class="panel-body">
+                                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias natus laborum in, beatae vitae quibusdam aliquam provident repudiandae nostrum ex enim minus adipisci perspiciatis nesciunt dolorem dolorum tenetur iste! Laborum!</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid odio, eligendi, minima fugit voluptatum repudiandae. Fugit sunt quod tenetur quibusdam, officiis earum natus, neque consectetur quam! Aperiam quia doloremque eius dolorem animi qui amet officiis debitis corrupti molestiae adipisci nulla, asperiores ut, veritatis dolorum ex? Adipisci ipsam libero, velit aspernatur!</p>
+                                                    <img src="img/dol.jpg" height="200px" width="150" alt="dol" class="img_left">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatum velit eveniet, quod, hic unde voluptatem nobis id possimus error et sint dicta laborum iste reprehenderit ea ratione deserunt, minima dignissimos ad! Explicabo delectus, ipsum iusto dolores consequatur incidunt est aliquid harum reiciendis iure asperiores iste et repellat maxime error?
+                                                    </p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus?</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio, perferendis optio repellendus iusto rem ipsum consequatur quo odio asperiores nulla, ratione recusandae officiis deserunt esse dolor, id velit! Distinctio atque, praesentium, neque pariatur facere enim at hic ut dicta doloribus ea et explicabo, minima officia, quidem adipisci maxime tenetur modi? Aspernatur animi maiores a nemo velit atque iste, debitis!</p>
+
+                                                    <p><a href="#" class="btn btn-primary" role="button">Подробние</a></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- End 3-d Panel -->
+
+                                    <!--4-th Panel  -->
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span>
+                                                    Collapsible Group Item #1
+                                                    </span>
+                                                </h4>
+                                            </div>
+
+                                            <div>
+                                                <div class="panel-body">
+                                                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias natus laborum in, beatae vitae quibusdam aliquam provident repudiandae nostrum ex enim minus adipisci perspiciatis nesciunt dolorem dolorum tenetur iste! Laborum!</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid odio, eligendi, minima fugit voluptatum repudiandae. Fugit sunt quod tenetur quibusdam, officiis earum natus, neque consectetur quam! Aperiam quia doloremque eius dolorem animi qui amet officiis debitis corrupti molestiae adipisci nulla, asperiores ut, veritatis dolorum ex? Adipisci ipsam libero, velit aspernatur!</p>
+                                                    <img src="img/dol.jpg" height="200px" width="150" alt="dol" class="img_left">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatum velit eveniet, quod, hic unde voluptatem nobis id possimus error et sint dicta laborum iste reprehenderit ea ratione deserunt, minima dignissimos ad! Explicabo delectus, ipsum iusto dolores consequatur incidunt est aliquid harum reiciendis iure asperiores iste et repellat maxime error?
+                                                    </p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus?</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio, perferendis optio repellendus iusto rem ipsum consequatur quo odio asperiores nulla, ratione recusandae officiis deserunt esse dolor, id velit! Distinctio atque, praesentium, neque pariatur facere enim at hic ut dicta doloribus ea et explicabo, minima officia, quidem adipisci maxime tenetur modi? Aspernatur animi maiores a nemo velit atque iste, debitis!</p>
+                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus?</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio, perferendis optio repellendus iusto rem ipsum consequatur quo odio asperiores nulla, ratione recusandae officiis deserunt esse dolor, id velit! Distinctio atque, praesentium, neque pariatur facere enim at hic ut dicta doloribus ea et explicabo, minima officia, quidem adipisci maxime tenetur modi? Aspernatur animi maiores a nemo velit atque iste, debitis!</p>
+
+                                                    <p><a href="#" class="btn btn-primary" role="button">Подробние</a></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- End 4-th Panel -->
+                                </div>
+                            <!-- End Panel group -->     
+                        <!-- End latest usefulness -->
+
+                        </div>
+                    <!-- END WELL-->
+
+                <!-- END CONTENT -->
+                
+
+                <!-- FOOTER -->
+                    <div class="mastfoot">
+                        <div class="inner">
+                                <span class="copy">© 2014 Все права защищены. </span>
+                                <span class="design">Created by Anna D.</a></span>
+                        </div>
+                    </div>
+                <!-- END FOOTER -->
+
+                <!--BUTTON UP  -->
+                    <a href="#" id='Go_Top'>
+                        <button type="button" id="button_up" class="btn btn-primary btn-lg hidden-xs">Вверх</button>
+                    </a>
+                <!-- END BUTTON UP -->
+
+                </div>
+            <!-- End .cover-container -->
+
+          </div>
+        <!-- End .site-wrapper-inner -->
+
+        </div>
+    <!-- End .site-wrapper -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

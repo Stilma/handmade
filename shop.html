@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="icon" href="../../favicon.ico">
+
+        <title></title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="cover.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- Google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+        <script language="JavaScript" type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+        </script>
+
+        <!-- SCRIPT FOR BUTTON -->
+        <script language="JavaScript" type="text/javascript">
+        $(function() {
+         $.fn.scrollToTop = function() {
+          $(this).hide().removeAttr("href");
+          if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+          var scrollDiv = $(this);
+          $(window).scroll(function() {
+           if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+           else $(scrollDiv).fadeIn("slow")
+          });
+          $(this).click(function() {
+           $("html, body").animate({scrollTop: 0}, "slow")
+          })
+         }
+        });
+         
+        $(function() {
+         $("#Go_Top").scrollToTop();
+        });
+        </script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <!-- .site-wrapper /обгортка сайту/-->
+        <div class="site-wrapper">
+        
+        <!-- .site-wrapper-inner /внутрішня обгортка сайту/-->
+            <div class="site-wrapper-inner">
+            
+            <!-- .cover-container /обложка-контейнер/-->
+                <div class="cover-container">
+                
+                <!-- HEADER -->
+                    <!-- .masthead clearfix /верхній  очищення/ -->
+                        <div class="masthead clearfix">
+                        
+                        <!-- .inner /внутрішній/ -->
+                            <div class="inner">
+
+                            <!--.masthead-brand /верхній(топ)-бренд/-->
+                            <a class="masthead-brand" href="handmade.html"><img src="img/logo.png" width="260px" height="110px"></a>
+                            <!--End .masthead-brand -->
+
+                            <!-- NAVIGATION -->
+                                <!-- .nav  masthead-nav-->
+                                    <ul class="nav masthead-nav font">
+                                        <li><a href="handmade.html">Главная</a></li>
+                                        <li class="active"><a href="shop.html">Магазин</a></li>
+                                        <li><a href="usefulness.html">Полезности</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                                <!-- End .nav masthead-nav -->
+                            <!-- END NAVIGATION-->
+                            
+                            </div>
+                        <!-- End .inner-->
+
+                        </div>
+                    <!-- End .masthead clearfix -->
+                <!-- END HEADER -->
+                
+                <!-- CONTENT -->
+
+                    <!-- WELL -->
+                        <div class="well">
+                            <!-- hidden-xs hidden-sm-->
+                                <div class="container-fluid hidden-xs hidden-sm">
+                                  <div class="row-fluid">
+
+                                    <div class="span2">
+                                    <!-- Filter right -->
+                                        <div class="well" id="well_filter">
+                                            <h5>Подбор по параметрам:</h5>
+
+                                            <ul class="nav nav-pills nav-stacked ">
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" id="button_width" data-toggle="button"> Вязаные игрушки</button>
+                                                </p>
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" id="button_width" data-toggle="button"> Вязаная одежда</button>
+                                                </p>
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" id="button_width" data-toggle="button"> Другое вязание</button>
+                                                </p>
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" id="button_width" data-toggle="button"> Шитые игрушки</button>
+                                                </p>  
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" id="button_width" data-toggle="button"> Шитая одежда</button>
+                                                </p>
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" id="button_width" data-toggle="button"> Другое шитье</button>
+                                                </p>
+                                            </ul>
+                                        </div>
+                                    <!-- End Filter right -->
+                                    </div>
+
+                                    <div class="span10 pull-left">
+
+                                        <!-- Goods -->
+                                            <div class="panel panel-default">
+
+                                                <div class="panel-body">
+                                                        <!-- Image -->
+                                                            <div class="col-md-5 col-lg-5">
+                                                                <div class="thumbnail">
+                                                                    <img src="img/spider.jpg" alt="spider">
+                                                                </div>
+                                                            </div>
+                                                        <!-- End Images -->
+                                                    <div class="col-md-5 col-lg-7">
+                                                        <!-- Name -->
+                                                            <div id="name_top">
+                                                                <h3>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h3>
+                                                            </div>
+                                                        <!-- End name -->
+                                                        
+                                                        <!-- Prise and Buy -->
+                                                            <div id="price">
+                                                                <h3>Цена: <span class="label label-primary"><span class="glyphicon glyphicon-tags"></span>   154 грн.</span></h3>
+                                                            </div>
+                                                            
+                                                            <div id="buy">
+                                                                <a href="order.html" class="btn btn-warning" role="button">
+                                                                    <span class="glyphicon glyphicon-gift"></span>
+                                                                    Заказать
+                                                                </a>
+
+                                                                <a href="buy.html" class="btn btn-danger" role="button">
+                                                                    <span class="glyphicon glyphicon-shopping-cart"></span> Купить
+                                                                </a>
+                                                            </div>
+                                                        <!-- End Prise and Buy -->
+                                                    </div>
+                                                    <!-- Description -->
+                                                        <div class="tabbable col-md-12 col-lg-12">
+                                                          <ul class="nav nav-tabs" id="margin_bottom">
+                                                            <li id="link_color" class="active"><a href="#tab1" data-toggle="tab">Характеристики</a></li>
+                                                            <li id="link_color"><a href="#tab2" data-toggle="tab">Фото/Видео</a></li>
+                                                            <li id="link_color"><a href="#tab3" data-toggle="tab">Описание</a></li>
+                                                          </ul>
+                                                          <div class="tab-content">
+                                                            <div class="tab-pane active" id="tab1">
+                                                                
+                                                                <!-- Charactiristics -->
+                                                                    <table id="table_text_align" class="table table-condensed table-striped">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Тип:</td>
+                                                                                <td id="none_top_border">Украшение</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border"> Название:</td>
+                                                                                <td id="none_top_border">Паучок</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Размеры:</td>
+                                                                                <td id="none_top_border">5х5см.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Материалы:</td>
+                                                                               <td id="none_top_border">Пуговка и нитки</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Рекомендации по уходу:</td>
+                                                                               <td id="none_top_border">Lorem ipsum.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Дополнительнo:</td>
+                                                                               <td id="none_top_border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, suscipit!</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                <!-- End Charactiristics -->
+                                                            </div>
+                                                            <div class="tab-pane" id="tab2">
+
+                                                                <!-- Gallery -->
+
+                                                                    <ul>
+                                                                        <img class=" col-md-5 col-lg-5" src="img/spider.jpg" alt="" title="Spider">
+                                                                        <img class=" col-md-5 col-lg-5" src="img/bag.jpg" alt="" title="Bag">
+                                                                        <img class=" col-md-5 col-lg-5" src="img/owl.jpg" alt="" title="Owl">
+                                                                        <img class=" col-md-5 col-lg-5" src="img/dol.jpg" alt="" title="Dol">
+                                                                    </ul>
+                                                                <!-- End Gallery -->
+
+                                                            </div>
+                                                            <div class="tab-pane" id="tab3">
+                                                              
+                                                                <!-- Nav Description -->
+                                                                    <div class="panel panel-default">
+                                                                      <div class="panel-body" id="panel_text_align">
+                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptate necessitatibus soluta ex et. Similique quam nesciunt adipisci quia vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nobis laboriosam at excepturi neque labore optio obcaecati ipsum, provident iure vero. Atque error incidunt quas alias, provident tempora sequi nisi consequatur, repellat beatae quis? Dignissimos quod voluptates dolores aut quos fuga, nulla magni repellat perferendis accusantium sequi totam. Temporibus sit reiciendis ipsa debitis, ex autem illum aliquam ullam!
+                                                                      </div>
+                                                                    </div>
+                                                                <!-- End Nav  Description -->
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    <!-- End Description -->
+                                                </div>
+                                            </div>
+                                        <!-- End Goods -->
+                                    </div>
+                                  </div>
+                                </div>
+                            <!--End hidden-xs hidden-sm-->
+
+                            <!-- hidden-md hidden-lg -->
+                                <div class=" hidden-md hidden-lg">
+                                    <!--Filter up -->
+                                        <ul class="nav nav-pills nav-justified" id="filter_up_nav">
+                                          <li id="filter_buttons" type="button" class="btn btn-primary"  data-toggle="button"> Вязаные игрушки</li>
+                                          <li id="filter_buttons" type="button" class="btn btn-primary"  data-toggle="button"> Вязаная одежда</li>
+                                          <li id="filter_buttons" type="button" class="btn btn-primary"  data-toggle="button"> Другое вязание</li>
+                                          <li id="filter_buttons" type="button" class="btn btn-primary"  data-toggle="button"> Шитые игрушки</li>
+                                          <li id="filter_buttons" type="button" class="btn btn-primary"  data-toggle="button"> Шитая одежда</li>
+                                          <li id="filter_buttons" type="button" class="btn btn-primary"  data-toggle="button"> Другое шитье</li>
+                                        </ul>
+                                    <!-- End Filter up -->
+
+                                    <!-- Goods -->
+                                            <div class="panel panel-default">
+
+                                                <div class="panel-body">
+                                                    
+                                                    <!-- Name -->
+                                                        <div>
+                                                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, amet.</h3>
+                                                        </div>
+                                                    <!-- End name -->
+
+                                                    <!-- Images -->
+                                                        <div class="col-xs-12 col-sm-5 ">
+                                                            <div class="thumbnail">
+                                                                <img src="img/spider.jpg" alt="spider">
+                                                            </div>
+                                                        </div>
+                                                    <!-- End Images -->
+                                                    
+                                                    <!-- Prise and Buy -->
+                                                            <div id="price">
+                                                                <h3>Цена: <span class="label label-primary"><span class="glyphicon glyphicon-tags"></span>   154 грн.</span></h3>
+                                                            </div>
+                                                            
+                                                            <div id="buy">
+                                                                <a href="#" class="btn btn-warning" role="button">
+                                                                    <span class="glyphicon glyphicon-gift"></span>
+                                                                    Заказать
+                                                                </a>
+
+                                                                <a href="#" class="btn btn-danger" role="button">
+                                                                    <span class="glyphicon glyphicon-shopping-cart"></span> Купить
+                                                                </a>
+                                                            </div>
+                                                    <!-- End Prise and Buy -->
+                                                    
+                                                    <!-- Description -->
+                                                        <div class="tabbable col-xs-12">
+                                                          <ul class="nav nav-tabs" id="margin_bottom">
+                                                            <li id="link_color" class="active"><a href="#tab1_2" data-toggle="tab">Характеристики</a></li>
+                                                            <li id="link_color"><a href="#tab2_2" data-toggle="tab">Фото/Видео</a></li>
+                                                            <li id="link_color"><a href="#tab3_2" data-toggle="tab">Описание</a></li>
+                                                          </ul>
+                                                          <div class="tab-content">
+                                                            <div class="tab-pane active" id="tab1_2">
+                                                                
+                                                                <!-- Charactiristics -->
+                                                                    <table id="table_text_align" class="table table-condensed table-striped">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Тип:</td>
+                                                                                <td id="none_top_border">Украшение</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border"> Название:</td>
+                                                                                <td id="none_top_border">Паучок</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Размеры:</td>
+                                                                                <td id="none_top_border">5х5см.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Материалы:</td>
+                                                                               <td id="none_top_border">Пуговка и нитки</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Рекомендации по уходу:</td>
+                                                                               <td id="none_top_border">Lorem ipsum.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td id="none_top_border">Дополнительнo:</td>
+                                                                               <td id="none_top_border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, suscipit!</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                <!-- End Charactiristics -->
+                                                            </div>
+                                                            <div class="tab-pane" id="tab2_2">
+
+                                                              <!-- Gallery -->
+                                                                    <div class="hovergallery col-xs-12">
+                                                                        <img class="col-xs-12" src="img/cat.jpg" />
+                                                                        <img class="col-xs-12" src="img/owl.jpg" />
+                                                                        <img class="col-xs-12" src="img/spider.jpg" />
+                                                                        <img class="col-xs-12" src="img/bracelet_1.jpg" />
+                                                                        <img class="col-xs-12" src="img/bubbles.jpg" />
+                                                                        <img class="col-xs-12" src="img/bag.jpg" />
+                                                                    </div>
+                                                              <!-- End Gallery -->
+                                                            </div>
+                                                            <div class="tab-pane" id="tab3_2">
+                                                                
+                                                               <!--Nav Description -->
+                                                                    <div class="panel panel-default">
+                                                                      <div class="panel-body" id="panel_text_align">
+                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptate necessitatibus soluta ex et. Similique quam nesciunt adipisci quia vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempore nesciunt consequatur deleniti quam voluptatem delectus perspiciatis? Molestias eum ea quaerat blanditiis! Saepe labore animi explicabo quo consequatur dolores suscipit facilis quod voluptatibus autem delectus inventore accusamus, quae similique repellendus optio praesentium quas eum nesciunt cumque nostrum. Deserunt atque aspernatur, quae iure corporis odit assumenda sint blanditiis adipisci inventore.
+                                                                      </div>
+                                                                    </div>
+                                                               <!-- End Nav Description -->
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    <!-- End Description -->
+                                                </div>
+                                            </div>
+                                    <!-- End Goods -->           
+                                </div>
+                            <!-- End hidden-md hidden-lg -->
+
+
+
+                        </div>
+                    <!-- END WELL-->
+
+                <!-- END CONTENT -->
+                
+                <!-- FOOTER -->
+                    <div class="mastfoot">
+                        <div class="inner">
+                                <span class="copy">© 2014 Все права защищены. </span>
+                                <span class="design">Created by Anna D.</a></span>
+                        </div>
+                    </div>
+                <!-- END FOOTER -->
+
+                <!--BUTTON UP  -->
+                    <a href="#" id='Go_Top'>
+                        <button type="button" id="button_up" class="btn btn-default btn-lg hidden-xs">Вверх</button>
+                    </a>
+                <!-- END BUTTON UP -->
+
+                </div>
+            <!-- End .cover-container -->
+
+          </div>
+        <!-- End .site-wrapper-inner -->
+
+        </div>
+    <!-- End .site-wrapper -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
